@@ -77,12 +77,12 @@ header h2 {
 	margin: 0 auto;
 	cursor: pointer;
 }
-#linkedin-logo {
+/*#linkedin-logo {
 	width: 160px;
 }
 #github-logo {
 	width: 165px;
-}
+}*/
 nav ul {
 	list-style-type: none;
 	padding: 0;
