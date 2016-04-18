@@ -51,6 +51,7 @@ header h2 {
 #bio-image {
 	float: left;
 	margin-right: 15px;
+	padding-top: 8px;
 }
 #main-body p {
 	line-height: 1.7em;
