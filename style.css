@@ -10,6 +10,7 @@
 
 /* GENERAL */
 body {
+	background-color: #FFEFD5;
 	font-family: 'Body', sans-serif;
 	padding: 0;
 	margin: 0;
@@ -31,7 +32,7 @@ header {
 }
 header h1 {
 	font-family: 'Logo', sans-serif;
-	color: #505050;
+	color: #FFEFD5;
 	float: left;
 	display: inline;
 }
