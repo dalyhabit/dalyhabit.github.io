@@ -72,7 +72,7 @@ header h2 {
 }
 .column-two {
 	float: left;
-	width: 50%;
+	width: 33%;
 	text-align: center;
 }
 .button {
@@ -83,6 +83,9 @@ header h2 {
 	max-width: 33%;
 }
 #github-logo {
+	max-width: 33%;
+}
+#resume-logo {
 	max-width: 33%;
 }
 nav ul {
