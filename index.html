@@ -7,11 +7,12 @@
 		Patrick Daly | Austin, TX
 	</title>
 	
-	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="resources/grid.css">
 	<link rel="stylesheet" type="text/css" href="resources/normalize.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400">
 	<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.css">
 </head>
 
 <body>
@@ -20,26 +21,45 @@
 		<nav>
 			<div class="row">
 				<ul class="main-nav">
-					<li><a class="btn btn-ghost" href="#">Portfolio</a></li>
-					<li><a class="btn btn-ghost" href="#">Resume</a></li>
-					<li><a class="btn btn-ghost" href="#">Contact</a></li>
+					<li><a href="#">Portfolio</a></li>
+					<li><a href="#">Resume</a></li>
+					<li><a href="#">Contact</a></li>
 				</ul>
 			</div>
 		</nav>
 
 		<div class="row header-text-box">
 			<h1>Patrick Daly</h1>
-			<h2>
-				Software Engineer <br>
-				Austin, TX
-			</h2>
+			<p class="subtitle">
+				Software Engineer
+			</p>
 		</div>
 	</header>
-	
-	<!-- <section id="main-body">
-		<img src="images/Patrick.jpg" id="bio-image"/>
-		<p>Hello world! I am a Software Engineer with a BS in Petroleum Engineering from the University of Texas. Currently, I work at <a target ="_blank" href="https://www.hackreactor.com">Hack Reactor</a> as the Lead Software Engineering Instructor at the Austin campus. I have experience developing on the front and back end using technologies like React, Angular, Backbone, Mithril, jQuery, MaterialUI, Node.js, Express, and PostgreSQL. I am passionate about learning new technologies and always looking for opportunities to expand and hone my skills. Some of my most recent projects include: my solo-project that has become popular on Austin’s subreddit <a target ="_blank" href="http://grnbltr.herokuapp.com">(grnbltr.com)</a> and an Angular web app that provides info about every mountain biking trail in the US <a target ="_blank" href="http://trail-blzr.herokuapp.com">(trail-blzr.herokuapp.com)</a>. You can view my resume and learn more about my background and code below.</p>
-	</section> -->
+
+	<section class="section-portfolio">
+		<div class="row">
+			<h2>Portfolio</h2>
+			<p class="long-copy">I have experience developing on the front and back end using technologies like React, Angular, Backbone, Mithril, jQuery, MaterialUI, Node.js, Express, and PostgreSQL. I am passionate about learning new technologies and always looking for opportunities to expand and hone my skills. Some of my most recent projects can be seen below.</p>
+		</div>
+		
+		<div class="row">
+			<div class="col span-1-of-3 box">
+				<i class="ion-leaf icon-big"></i>
+				<h3>Greenbelter</h3>
+				<p>Access useful information about the Barton Creek Greenbelt, all in one convenient location. View real-time water flow and water depth data, obtained from the USGS Water Services API, at multiple locations on the greenbelt. Additionally, obtain driving and walking directions from your current location.</p>
+			</div>
+			<div class="col span-1-of-3 box">
+				<i class="ion-android-bicycle icon-big"></i>
+				<h3>Trail Blazer</h3>
+				<p>Search for mountain biking and hiking trails near any city in the Unites States. For each trail, view the location of the trailhead, distance of the trails, and helpful comments from other users.</p>
+			</div>
+			<div class="col span-1-of-3 box">
+				<i class="ion-pull-request icon-big"></i>
+				<h3>Moonlighter</h3>
+				<p>Gamify your Github account. As a contributor, earn tokens and unlock new characters as you contribute to open source projects. As a project owner, place bounties on issues and features that need to be finished on your projects.</p>
+			</div>
+		</div>
+	</section>
 	
 	<!-- <section id="site-nav">
 		<div class="column-two" id="about">
