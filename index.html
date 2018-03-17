@@ -21,9 +21,9 @@
 		<nav>
 			<div class="row">
 				<ul class="main-nav">
-					<li><a href="#">Portfolio</a></li>
-					<li><a href="#">Resume</a></li>
-					<li><a href="#">Contact</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#resume">Resume</a></li>
+					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</div>
 		</nav>
@@ -36,60 +36,106 @@
 		</div>
 	</header>
 
-	<section class="section-portfolio">
+	<a id="portfolio">
+		<section class="section-portfolio">
+			<div class="row">
+				<h2>Portfolio</h2>
+				<p class="long-copy">I have experience developing on the front end and back end using technologies like React, Angular, Backbone, Mithril, jQuery, MaterialUI, Node.js, Express, and PostgreSQL. I am passionate about learning new technologies and always looking for opportunities to expand and hone my skills. Some of my recent projects can be seen below.</p>
+			</div>
+			
+			<div class="row">
+				<div class="col span-1-of-3 box">
+					<i class="ion-leaf icon-big"></i>
+					<h3>Greenbelter</h3>
+					<p>Access useful information about the Barton Creek Greenbelt, all in one convenient location. View real-time water flow and water depth data, obtained from the USGS Water Services API, at multiple locations on the greenbelt. Additionally, obtain driving and walking directions from your current location.</p>
+				</div>
+				<div class="col span-1-of-3 box">
+					<i class="ion-android-bicycle icon-big"></i>
+					<h3>Trail Blazer</h3>
+					<p>Search for mountain biking and hiking trails near any city in the Unites States. For each trail, view the location of the trailhead, trail features, distance of the trails, and helpful comments from other users.</p>
+				</div>
+				<div class="col span-1-of-3 box">
+					<i class="ion-pull-request icon-big"></i>
+					<h3>Moonlighter</h3>
+					<p>Gamify your Github account. As a contributor, earn tokens and unlock new characters as you contribute to open source projects. As a project owner, place bounties on issues and features that need to be finished on your projects.</p>
+				</div>
+			</div>
+		</section>
+	</a>
+
+	<a id="resume"></a>
+	
+	<section class="section-resume">
 		<div class="row">
-			<h2>Portfolio</h2>
-			<p class="long-copy">I have experience developing on the front end and back end using technologies like React, Angular, Backbone, Mithril, jQuery, MaterialUI, Node.js, Express, and PostgreSQL. I am passionate about learning new technologies and always looking for opportunities to expand and hone my skills. Some of my recent projects can be seen below.</p>
+			<h2>Resume</h2>
 		</div>
-		
 		<div class="row">
 			<div class="col span-1-of-3 box">
-				<i class="ion-leaf icon-big"></i>
-				<h3>Greenbelter</h3>
-				<p>Access useful information about the Barton Creek Greenbelt, all in one convenient location. View real-time water flow and water depth data, obtained from the USGS Water Services API, at multiple locations on the greenbelt. Additionally, obtain driving and walking directions from your current location.</p>
+				<a target="_blank" href="https://www.linkedin.com/in/patrickmdaly">
+					<img id="linkedin-logo" src="resources/linkedin.png">
+					<h3>LinkedIn</h3>
+				</a>
 			</div>
 			<div class="col span-1-of-3 box">
-				<i class="ion-android-bicycle icon-big"></i>
-				<h3>Trail Blazer</h3>
-				<p>Search for mountain biking and hiking trails near any city in the Unites States. For each trail, view the location of the trailhead, trail features, distance of the trails, and helpful comments from other users.</p>
+				<a target="_blank" href="https://github.com/dalyhabit">
+					<img class="socialmedia" id="github-logo" src="resources/github.png">
+					<h3>Github</h3>
+				</a>
 			</div>
 			<div class="col span-1-of-3 box">
-				<i class="ion-pull-request icon-big"></i>
-				<h3>Moonlighter</h3>
-				<p>Gamify your Github account. As a contributor, earn tokens and unlock new characters as you contribute to open source projects. As a project owner, place bounties on issues and features that need to be finished on your projects.</p>
+				<a target="_blank" href="resume.pdf">
+					<img class="socialmedia" id="resume-logo" src="resources/resume.png">
+					<h3>Resume</h3>
 			</div>
 		</div>
 	</section>
-	
-	<!-- <section id="site-nav">
-		<div class="column-two" id="about">
-			<h1 class="h3">LinkedIn</h1>
-			<div class="button" id="about-button"></div>
-			<nav>
-				<ul>
-					<li><a target ="_blank" href="https://www.linkedin.com/in/patrickmdaly"><img class="socialmedia" id="linkedin-logo" src="images/linkedin.png"></a></li>
-				</ul>
-			</nav>
-		</div>
-		<div class="column-two" id="code">
-			<h1 class="h3">GitHub</h1>
-			<div class="button" id="code-button"></div>
-			<nav>
-				<ul>
-					<li><a target="_blank" href="https://github.com/dalyhabit"><img class="socialmedia" id="github-logo" src="images/github.png"></a></li>
-				</ul>
-			</nav>
-		</div>
-		<div class="column-two" id="resume">
-			<h1 class="h3">Resume</h1>
-			<div class="button" id="resume-button"></div>
-			<nav>
-				<ul>
-					<li><a target ="_blank" href="resume.pdf"><img class="socialmedia" id="resume-logo" src="images/resume.png"></a></li>
-				</ul>
-			</nav>
-		</div>
-	</section> -->
+
+
+	<a id="contact">
+		<section class="section-form">
+			<div class="row">
+				<h2>Contact Me</h2>
+			</div>
+			
+			<div class="row">
+				<form method="post" action="#" class="contact-form">
+					<div class="row">
+						<div class= "col span-1-of-3">
+							<label for="name">Name</label>
+						</div>
+						<div class= "col span-2-of-3">
+							<input type="text" name="name" id="name" placeholder="Your name" required>
+						</div>
+					</div>
+					<div class="row">
+						<div class= "col span-1-of-3">
+							<label for="email">Email</label>
+						</div>
+						<div class= "col span-2-of-3">
+							<input type="email" name="email" id="email" placeholder="Your email address" required>
+						</div>
+					</div>
+					<div class="row">
+						<div class= "col span-1-of-3">
+							<label>Message</label>
+						</div>
+						<div class= "col span-2-of-3">
+							<textarea name="message" placeholder="Your Message"></textarea>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col span-1-of-3">
+							<label>&nbsp;</label>
+						</div>
+						<div class="col span-2-of-3">
+							<input type="submit" value="Send Email">
+						</div>
+					</div>
+				</form>
+			</div>
+
+		</section>
+	</a>
 
 </body>
 </html>
