@@ -202,6 +202,11 @@ input[type=submit]:active {
 	line-height: 145%
 }
 
+.section-portfolio i, 
+.section-portfolio h3 {
+	text-align: center;
+}
+
 /* ICONS */
 .icon-big {
 	font-size: 350%;
