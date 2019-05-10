@@ -148,7 +148,7 @@ h2:after {
 .btn:link,
 .btn:visited,
 input[type=submit] {
-	display: inline:block;
+	display: inline-block;
 	padding: 10px 30px;
 	font-weight: 300;
 	text-decoration: none;
@@ -205,6 +205,10 @@ input[type=submit]:active {
 .section-portfolio i, 
 .section-portfolio h3 {
 	text-align: center;
+}
+
+.section-portfolio .span-1-of-3 {
+	width: 31%
 }
 
 /* ICONS */
