@@ -208,7 +208,7 @@ input[type=submit]:active {
 }
 
 .section-portfolio .span-1-of-3 {
-	width: 31%
+	width: 31.7% !important;
 }
 
 /* ICONS */
