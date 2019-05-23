@@ -65,6 +65,15 @@ img#resume-logo,
 img#github-logo,
 img#linkedin-logo {
 	padding: 20px;
+	width: 40%;
+}
+
+.screenshot-container {
+	text-align: center;
+}
+
+img#screenshot {
+	max-width: 320px;
 }
 
 /* NAVIGATION */
@@ -193,8 +202,9 @@ input[type=submit]:active {
 
 .long-copy {
 	line-height: 145%;
-	width: 70%;
-	margin-left: 15%; /* width + margin-left + margin-right = 100% */
+	width: 94%;
+	padding-bottom: 1em;
+	margin-left: 3%; /* width + margin-left + margin-right = 100% */
 }
 
 .box p {
