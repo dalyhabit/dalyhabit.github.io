@@ -51,11 +51,13 @@
 
   .contact-form { width: 80%; }
 
+  .footer-buttons { display: none; }
+
 }
 
 @media only screen and (max-width: 480px) {
   section { padding: 25px 0; }
 
-  .contact-form { width: 100% }
-  
+  .contact-form { width: 100%; }
+
 }
