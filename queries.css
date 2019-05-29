@@ -66,4 +66,8 @@
     width: 30%;
   }
 
+  input { 
+    margin-bottom: .5em;
+  }
+
 }
