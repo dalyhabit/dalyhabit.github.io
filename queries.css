@@ -60,4 +60,10 @@
 
   .contact-form { width: 100%; }
 
+  img#resume-logo,
+  img#github-logo,
+  img#linkedin-logo {
+    width: 30%;
+  }
+
 }
