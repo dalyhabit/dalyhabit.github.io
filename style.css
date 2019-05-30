@@ -33,7 +33,7 @@ section {
 /* ---------- HEADER ---------- */
 
 header {
-	background-image: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url(resources/web-design.jpg);
+	background-image: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url(resources/images/web-design.jpg);
 	background-size: cover;
 	background-position: center;
 	height:	100vh;
@@ -61,11 +61,11 @@ header {
 	margin-bottom: 15px;
 }
 
-img#resume-logo,
-img#github-logo,
-img#linkedin-logo {
+img.resume-logo,
+img.github-logo,
+img.linkedin-logo {
 	padding: 20px;
-	width: 40%;
+	max-width: 128px;
 }
 
 .screenshot-container {
