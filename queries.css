@@ -34,14 +34,18 @@
   .row,
   .header-text-box { padding: 0 4%; }
 
-  .portfolio-body {
-    padding: 20px;
+  .hero-image {
+    display: none;
   }
-
+  
   .main-nav { display: none; }
-
+  
   .section-portfolio .span-1-of-3 {
     width: 100% !important;
+  }
+  
+  .portfolio-body {
+    padding: 20px;
   }
 
   .portfolio-col {
