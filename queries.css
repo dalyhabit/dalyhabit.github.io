@@ -88,3 +88,39 @@
   }
 
 }
+
+@media only screen and (max-height: 670px) {
+  .hero-image {
+    display: none;
+  }
+}
+
+@media only screen and (max-height: 400px) {
+  h1, .subtitle {
+    margin-bottom: 10px;
+  }
+
+  .avatar {
+    height: 160px;
+  }
+}
+
+@media only screen and (max-height: 300px) {
+  h1, .subtitle {
+    margin-bottom: 15px;
+  }
+
+  .avatar {
+    height: 120px;
+  }
+}
+
+@media only screen and (max-height: 260px) {
+  h1, .subtitle {
+    margin-bottom: 15px;
+  }
+
+  .avatar {
+    display: none;
+  }
+}
