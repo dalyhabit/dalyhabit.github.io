@@ -184,6 +184,7 @@ h2:after {
 .btn:link,
 .btn:visited,
 input[type=submit] {
+	cursor: pointer;
 	display: inline-block;
 	padding: 10px 30px;
 	font-weight: 300;
@@ -212,7 +213,7 @@ input[type=submit] {
 .btn:active,
 input[type=submit]:hover,
 input[type=submit]:active {
-	background-color: #219ebc;
+	background-color: #ffb703;
 	color: #023047;
 }
 
@@ -221,7 +222,7 @@ input[type=submit]:active {
 .btn-full:active,
 input[type=submit]:hover,
 input[type=submit]:active {
-	border: 1px solid #219ebc;
+	border: 1px solid #ffb703;
 }
 
 .btn-ghost:hover,
@@ -303,13 +304,6 @@ a:visited {
 a:hover,
 a:focus,
 a:active {
-	color: #8ecae6;
-	/* border-bottom: 1px solid transparent; */
-}
-
-.section-resume a:hover,
-.section-resume a:focus,
-.section-resume a:active {
 	color: #fb8500;
 	/* border-bottom: 1px solid transparent; */
 }
@@ -363,7 +357,7 @@ input[type=submit] {
 /* FOOTER */
 
 footer {
-	background-color: #333;
+	background-color: #023047;
 	padding: 50px;
 	font-size: 80%;
 }
@@ -395,14 +389,14 @@ footer {
 .social-links li a:visited {
 	text-decoration: none;
 	border: 0;
-	color: #888;
+	color: #8ecae6;
 	transition: color 0.2s;
 }
 
 .footer-nav li a:hover,
 .footer-nav li a:focus,
 .footer-nav li a:active {
-	color: #ddd;
+	color: #ffb703;
 }
 
 .social-links li a:link,
@@ -418,7 +412,7 @@ footer {
 
 .linkedin-icon path,
 .github-icon path {
-	fill: #888;
+	fill: #8ecae6;
 	transition: fill 0.2s;
 }
 
@@ -433,7 +427,7 @@ footer {
 }
 
 footer p {
-	color: #888;
+	color: #8ecae6;
 	text-align: center;
 	margin-top: 30px;
 }
