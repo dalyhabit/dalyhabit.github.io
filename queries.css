@@ -34,6 +34,10 @@
   .row,
   .header-text-box { padding: 0 4%; }
 
+  .subtitle {
+    font-size: 150%;
+  }
+
   .hero-image {
     display: none;
   }
