@@ -7,7 +7,7 @@
 html {
 	background-color: #fff;
 	color: #555;
-	font-family: 'Lato', 'Arial', sans-serif;
+	font-family: 'Titillium Web', sans-serif;
 	font-weight: 300;
 	font-size: 20px;
 	text-rendering: optimizeLegibility;
@@ -133,7 +133,7 @@ h1 {
 	margin-bottom: 20px;
 	color: #219ebc;
 	font-size: 240%;
-	font-weight: 400;
+	font-weight: 600;
 	letter-spacing: 1px;
 	word-spacing: 4px;
 }
