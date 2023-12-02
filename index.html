@@ -34,6 +34,7 @@
 		<nav>
 			<div class="row">
 				<ul class="main-nav">
+					<li><a href="#about" aria-label="link to about">About Me</a></li>
 					<li><a href="#portfolio" aria-label="link to portfolio">Portfolio</a></li>
 					<li><a href="#resume" aria-label="link to resume">Resume</a></li>
 					<li><a href="#contact" aria-label="link to contact">Contact</a></li>
@@ -53,19 +54,20 @@
 		</div>
 	</header>
 
-	<div id="portfolio">
+	<div id="about">
 		<section class="section-copy">
 			<div class="row portfolio-copy">
-				<h2>Portfolio</h2>
+				<h2>About Me</h2>
 				<p class="long-copy">Hi, nice to meet you! I'm a Senior Frontend Engineer at Khoros. Javascript is my preferred programming language, and I'm comfortable working with most of the latest frontend frameworks used to build modern websites. I also have experience working with various build and CI/CD tools, testing libraries, databases, and Javascript server-side frameworks.
 				</p><p class="long-copy">	
 				I was the lead instructor at one of the country's top software engineering bootcamps for 2 years. Collaborating with people who are excited about building cool things is what I enjoy. I am passionate about learning new technologies and always looking for opportunities to expand and hone my skills. A few of my personal projects can be seen below.</p>
 			</div>
 		</section>
-		<section class="section-portfolio">
+		<section id="portfolio" class="section-portfolio">
 			<div class="row portfolio-body">
-				<div class="col span-1-of-3 box portfolio-col">
-					<a target="_blank" href="https://www.corporate-quarters.com" aria-label="corporate-quarters.com">
+				<h2>Portfolio</h2>
+				<div class="portfolio-flex">
+					<div class="col span-1-of-3 box portfolio-col">
 						<div class="screenshot-container">
 							<picture>
 								<source class="screenshot" srcset="resources/images/corporate-quarters.jp2" type="image/jp2">
@@ -73,12 +75,12 @@
 								<img class="screenshot" src="resources/images/corporate-quarters.png" alt="corporate-quarters">
 							</picture>
 						</div>
-						<h3>Corporate-Quarters.com</h3>
-					</a>
-					<p>Website for a company who connects landlords to tenants by providing short-term rentals to corporate business travelers, travel nurses, etc. Developed using React 18 and Webpack 5, hosted by AWS. Continuous integration and continuous deployment configured through AWS Amplify.</p>
-				</div>
-				<div class="col span-1-of-3 box portfolio-col">
-					<a target="_blank" href="https://github.com/dalyhabit/dalyhabit.github.io" aria-label="patrickdaly.us">
+						<a target="_blank" href="https://www.corporate-quarters.com" aria-label="corporate-quarters.com">
+							<h3>Corporate-Quarters.com</h3>
+						</a>
+						<p>Website for a company who connects landlords to tenants by providing short-term rentals to corporate business travelers, travel nurses, etc. Developed using React 18 and Webpack 5, hosted by AWS. Continuous integration and continuous deployment configured through AWS Amplify.</p>
+					</div>
+					<div class="col span-1-of-3 box portfolio-col">
 						<div class="screenshot-container">
 							<picture>
 								<source class="screenshot" srcset="resources/images/patrickdaly.us.jp2" type="image/jp2">
@@ -86,12 +88,12 @@
 								<img class="screenshot" src="resources/images/patrickdaly.us.png" alt="patrickdaly.us">
 							</picture>
 						</div>
-						<h3>patrickdaly.us</h3>
-					</a>
-					<p>The website you're looking at right now! A simple personal webpage developed using only HTML and CSS. Super efficient and fully responsive. Also, it's self-hosted on my home server behind an nginx reverse proxy and secured with SSL.</p>
-				</div>
-				<div class="col span-1-of-3 box portfolio-col">
-					<a target="_blank" href="http://www.greenbelter.io" aria-label="greenbelter.io">
+						<a target="_blank" href="https://github.com/dalyhabit/dalyhabit.github.io" aria-label="patrickdaly.us">
+							<h3>patrickdaly.us</h3>
+						</a>
+						<p>The website you're looking at right now! A simple personal webpage developed using only HTML and CSS. Super efficient and fully responsive. Also, it's self-hosted on my home server behind an nginx reverse proxy and secured with SSL.</p>
+					</div>
+					<div class="col span-1-of-3 box portfolio-col">
 						<div class="screenshot-container">
 							<picture>
 								<source class="screenshot" srcset="resources/images/greenbelter.io.jp2" type="image/jp2">
@@ -99,9 +101,11 @@
 								<img class="screenshot" src="resources/images/greenbelter.io.png" alt="greenbelter.io">
 							</picture>
 						</div>
-						<h3>Greenbelter.io</h3>
-					</a>
-					<p>Access useful information about the Barton Creek Greenbelt. View real-time water flow and water depth data, obtained from the USGS Water Services API, at multiple locations on the greenbelt. Additionally, obtain driving and walking directions from your current location. Developed using React, Node/Express, and deployed on AWS.</p>
+						<a target="_blank" href="http://www.greenbelter.io" aria-label="greenbelter.io">
+							<h3>Greenbelter.io</h3>
+						</a>
+						<p>Access useful information about the Barton Creek Greenbelt. View real-time water flow and water depth data, obtained from the USGS Water Services API, at multiple locations on the greenbelt. Additionally, obtain driving and walking directions from your current location. Developed using React, Node/Express, and deployed on AWS.</p>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -173,6 +177,7 @@
 			<div class="col span-1-of-2">
 				<ul class="footer-nav">
 					<li><a href="#header" aria-label="back to top">Back To Top</a></li>
+					<li><a href="#about" aria-label="footer link to about">About Me</a></li>
 					<li><a href="#portfolio" aria-label="footer link to portfolio">Portfolio</a></li>
 					<li><a href="#resume" aria-label="footer link to resume">Resume</a></li>
 					<li><a href="#contact" aria-label="footer link to contact">Contact</a></li>

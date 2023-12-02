@@ -47,6 +47,10 @@
   .section-portfolio .span-1-of-3 {
     width: 100% !important;
   }
+
+  .portfolio-flex {
+    flex-direction: column;
+  }
   
   .portfolio-body {
     padding: 20px;
