@@ -216,6 +216,7 @@ input[type=submit] {
 .btn:focus,
 .btn:active,
 input[type=submit]:hover,
+input[type=submit]:focus,
 input[type=submit]:active {
 	background-color: #ffb703;
 	color: #023047;
@@ -225,6 +226,7 @@ input[type=submit]:active {
 .btn-full:focus,
 .btn-full:active,
 input[type=submit]:hover,
+input[type=submit]:focus,
 input[type=submit]:active {
 	border: 1px solid #ffb703;
 }
@@ -426,12 +428,14 @@ footer {
 }
 
 .linkedin-icon:hover path,
-.linkedin-icon:focus path {
+.linkedin-icon:focus path,
+.linkedin-icon:active path {
 	fill: #007bb5;
 }
 
 .github-icon:hover path,
-.github-icon:focus path {
+.github-icon:focus path,
+.github-icon:active path {
 	fill: #2fcb53;
 }
 
