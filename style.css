@@ -430,13 +430,13 @@ footer {
 .linkedin-icon:hover path,
 .linkedin-icon:focus path,
 .linkedin-icon:active path {
-	fill: #007bb5;
+	fill: #ffb703;;
 }
 
 .github-icon:hover path,
 .github-icon:focus path,
 .github-icon:active path {
-	fill: #2fcb53;
+	fill: #ffb703;;
 }
 
 footer p {
