@@ -89,8 +89,16 @@ img.linkedin-logo {
 	max-width: 128px;
 }
 
-.screenshot-container {
+.screenshot-container,
+.logo-container {
 	text-align: center;
+}
+
+.logo-container {
+	display: flex;
+    min-height: 150px;
+    justify-content: center;
+    align-items: center;
 }
 
 img.screenshot {
@@ -166,11 +174,6 @@ h2 {
 	letter-spacing: 1px;
 }
 
-h3 {
-	font-size: 110%;
-	margin-bottom: 15px;
-}
-
 h2:after {
 	display: block;
 	height: 2px;
@@ -179,6 +182,26 @@ h2:after {
 	width: 100px;
 	margin: 0 auto;
 	margin-top: 30px;
+}
+
+h3 {
+	font-size: 110%;
+	margin-bottom: 15px;
+}
+
+.personal-portfolio-header,
+.professional-portfolio-header {
+	color: #023047;
+}
+
+.professional-portfolio-header:before {
+	display: block;
+	height: 2px;
+	background: #E6ECF8;
+	content: " ";
+	width: 100%;
+	margin: 30px auto;
+	margin-bottom: 60px;
 }
 
 /* BUTTONS */
