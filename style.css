@@ -96,7 +96,7 @@ img.linkedin-logo {
 
 .logo-container {
 	display: flex;
-    min-height: 150px;
+    min-height: 125px;
     justify-content: center;
     align-items: center;
 }
@@ -189,9 +189,14 @@ h3 {
 	margin-bottom: 15px;
 }
 
+.personal-portfolio-header {
+	padding-top: 15px;
+}
+
 .personal-portfolio-header,
 .professional-portfolio-header {
-	color: #023047;
+	color: #219ebc;
+    font-weight: 600;
 }
 
 .professional-portfolio-header:before {
