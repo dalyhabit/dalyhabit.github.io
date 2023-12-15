@@ -89,16 +89,57 @@ img.linkedin-logo {
 	max-width: 128px;
 }
 
+img.company-logo {
+	margin: 0;
+}
+
 .screenshot-container,
 .logo-container {
 	text-align: center;
 }
 
 .logo-container {
+	position: relative;
 	display: flex;
     min-height: 125px;
     justify-content: center;
     align-items: center;
+}
+
+.logo-overlay {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	border-radius: 20px;
+	color: white;
+	opacity: 0;
+	transition: .4s linear;
+	background-color: white;
+}
+
+.logo-container:hover .logo-overlay {
+	opacity: 1;
+}
+
+.visit-website-button {
+	background-color: transparent;
+	border: 2px solid #fb8500;
+	color: #013047;
+	cursor: pointer;
+    padding: 10px;
+    border-radius: 20px;
+	transition: .2s linear;
+}
+
+.visit-website-button:hover {
+	background-color: #fb8500;
 }
 
 img.screenshot {
