@@ -75,6 +75,10 @@ header {
 	color: #023047;
 }
 
+#portfolio h2 {
+	margin-top: 25px;
+}
+
 .box img {
 	max-width: 230px;
 	width: 100%;
