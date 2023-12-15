@@ -69,13 +69,13 @@ header {
 	text-align: center;
 }
 
-#portfolio h2,
+#portfolio-section h2,
 .section-resume h2,
 .section-form h2 {
 	color: #023047;
 }
 
-#portfolio h2 {
+#portfolio-section h2 {
 	margin-top: 25px;
 }
 
