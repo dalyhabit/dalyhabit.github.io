@@ -104,6 +104,11 @@ img.linkedin-logo {
 img.screenshot {
 	max-width: 320px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	transition: .5s ease;
+}
+
+.image-link:hover .screenshot {
+	box-shadow: 0 4px 8px 0 rgba(167, 102, 42, 0.2), 0 6px 20px 0 rgba(167, 102, 42, 0.19);
 }
 
 /* NAVIGATION */
@@ -334,8 +339,6 @@ a:link,
 a:visited {
 	color: #023047;
 	text-decoration: none;
-	/* padding-bottom: 1px; */
-	/* border-bottom: 1px solid #e67e22; */
 	transition: color 0.2s;
 }
 
