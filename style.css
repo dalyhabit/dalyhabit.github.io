@@ -137,8 +137,8 @@ img.company-logo {
 	border: 2px solid #fb8500;
 	color: #013047;
 	cursor: pointer;
-    padding: 10px;
-    border-radius: 20px;
+    padding: 10px 20px;
+    border-radius: 30px;
 	transition: .2s linear;
 }
 
