@@ -95,6 +95,10 @@ img.linkedin-logo {
 	transition: .2s linear;
 }
 
+img.github-logo {
+	border-radius: 50%;
+}
+
 img.resume-logo:hover,
 img.github-logo:hover,
 img.linkedin-logo:hover {
