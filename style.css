@@ -99,18 +99,18 @@ img.company-logo {
 
 .screenshot-container,
 .logo-container {
+	position: relative;
 	text-align: center;
 }
 
 .logo-container {
-	position: relative;
 	display: flex;
     min-height: 125px;
     justify-content: center;
     align-items: center;
 }
 
-.logo-overlay {
+.overlay {
 	position: absolute;
 	display: flex;
 	align-items: center;
@@ -121,14 +121,15 @@ img.company-logo {
 	right: 0;
 	height: 100%;
 	width: 100%;
-	border-radius: 20px;
+	box-shadow: none;
 	color: white;
 	opacity: 0;
 	transition: .4s linear;
 	background-color: white;
 }
 
-.logo-container:hover .logo-overlay {
+.logo-container:hover .overlay,
+.screenshot-container:hover .overlay {
 	opacity: 1;
 }
 
@@ -152,8 +153,8 @@ img.screenshot {
 	transition: .5s ease;
 }
 
-.image-link:hover .screenshot {
-	box-shadow: 0 4px 8px 0 rgba(167, 102, 42, 0.2), 0 6px 20px 0 rgba(167, 102, 42, 0.19);
+.screenshot-container:hover .screenshot {
+	box-shadow: none;
 }
 
 /* NAVIGATION */
