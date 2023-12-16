@@ -109,6 +109,7 @@ img.company-logo {
 .logo-container {
 	position: relative;
 	text-align: center;
+	transition: .4s linear;
 }
 
 .logo-container {
@@ -271,6 +272,13 @@ h3 {
 
 /* BUTTONS */
 
+.btn,
+.btn-full,
+.btn-ghost,
+input[type=submit] {
+	transition: 0.2s linear;
+}
+
 .btn:link,
 .btn:visited,
 input[type=submit] {
@@ -389,6 +397,10 @@ input[type=submit]:active {
 
 /* LINKS */
 
+a {
+	transition: 0.2s linear;
+}
+
 a:link,
 a:visited {
 	color: #023047;
@@ -400,7 +412,6 @@ a:hover,
 a:focus,
 a:active {
 	color: #fb8500;
-	/* border-bottom: 1px solid transparent; */
 }
 
 /* CONTACT FORM */
