@@ -15,6 +15,7 @@ html {
 
 body {
 	padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+	cursor: default;
 }
 
 /* ----------------------------- */
@@ -139,6 +140,11 @@ img.company-logo {
 	opacity: 0;
 	transition: .4s linear;
 	background-color: white;
+}
+
+.overlay span {
+	color: #013047;
+	font-size: 18px;
 }
 
 .logo-container:hover .overlay,
