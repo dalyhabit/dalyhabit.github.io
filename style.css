@@ -148,6 +148,8 @@ img.company-logo {
 }
 
 .logo-container:hover .overlay,
+.logo-container:focus-within .overlay,
+.screenshot-container:focus-within .overlay,
 .screenshot-container:hover .overlay {
 	opacity: 1;
 }
@@ -155,14 +157,15 @@ img.company-logo {
 .visit-website-button {
 	background-color: transparent;
 	border: 2px solid #fb8500;
-	color: #013047;
 	cursor: pointer;
     padding: 10px 20px;
     border-radius: 30px;
 	transition: .2s linear;
 }
 
-.visit-website-button:hover {
+.visit-website-button:hover,
+.visit-website-button:focus {
+	color: #013047;
 	background-color: #fb8500;
 }
 
@@ -172,7 +175,8 @@ img.screenshot {
 	transition: .5s ease;
 }
 
-.screenshot-container:hover .screenshot {
+.screenshot-container:hover .screenshot,
+.screenshot-container:focus-within .screenshot {
 	box-shadow: none;
 }
 
@@ -415,7 +419,7 @@ a:link,
 a:visited {
 	color: #023047;
 	text-decoration: none;
-	transition: color 0.2s;
+	transition: 0.2s linear;
 }
 
 a:hover,
@@ -491,7 +495,8 @@ footer {
 .footer-nav li,
 .social-links li {
 	display: inline-block;
-	margin-right: 20px
+	margin-right: 20px;
+	transition: 0.2s linear;
 }
 
 .footer-nav li:last-child,
@@ -511,7 +516,10 @@ footer {
 
 .footer-nav li a:hover,
 .footer-nav li a:focus,
-.footer-nav li a:active {
+.footer-nav li a:active,
+.social-links li a:hover,
+.social-links li a:focus,
+.social-links li a:active {
 	color: #ffb703;
 }
 
@@ -524,24 +532,6 @@ footer {
 .github-icon {
 	height: 30px;
 	width: 30px;
-}
-
-.linkedin-icon path,
-.github-icon path {
-	fill: #8ecae6;
-	transition: fill 0.2s;
-}
-
-.linkedin-icon:hover path,
-.linkedin-icon:focus path,
-.linkedin-icon:active path {
-	fill: #ffb703;;
-}
-
-.github-icon:hover path,
-.github-icon:focus path,
-.github-icon:active path {
-	fill: #ffb703;;
 }
 
 footer p {
