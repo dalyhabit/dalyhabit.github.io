@@ -264,7 +264,12 @@ h3 {
 }
 
 .professional-portfolio-header {
-	padding: 15px 0;
+	padding-top: 30px;
+	margin: 0;
+}
+
+.personal-portfolio-header {
+	margin-bottom: 30px;
 }
 
 .personal-portfolio-header,
