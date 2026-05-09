@@ -10,22 +10,20 @@
 	})(window,document,'script','dataLayer','GTM-MJ57CRMC');
 	</script>
 	<!-- End Google Tag Manager -->
-	<meta name="viewport" viewport-fit=cover content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 	<meta charset="utf-8">
 	<meta name="description" content="Patrick Daly - Front End Software Engineer in Austin, TX">
-	
+
 	<title>
 		Patrick Daly | Software Engineer
 	</title>
-	
-	<link rel="stylesheet" type="text/css" href="resources/style/grid.css">
+
 	<link rel="stylesheet" type="text/css" href="resources/style/normalize.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap" rel="stylesheet">
 	<link rel="icon" type="image/x-icon" href="resources/images/favicon.ico">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="queries.css">
 </head>
 
 <body>
@@ -39,7 +37,11 @@
 
 	<header id="header">
 		<nav>
+			<input type="checkbox" id="nav-toggle" class="nav-toggle">
 			<div class="row">
+				<label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation">
+					<span class="hamburger-bar"></span>
+				</label>
 				<ul class="main-nav">
 					<li><a href="#about" aria-label="link to about me">About Me</a></li>
 					<li><a href="#portfolio" aria-label="link to portfolio">Portfolio</a></li>
@@ -66,9 +68,9 @@
 			<div class="row portfolio-copy">
 				<h2>About Me</h2>
 				<p class="long-copy">Hi, nice to meet you! I'm a Senior Software Engineer at Udemy. TypeScript is my preferred programming language, and I'm comfortable working with most of the latest front-end frameworks. I also have experience working with various build and CI/CD tools, testing libraries, databases, and JavaScript server-side frameworks.
-				</p><p class="long-copy">	
+				</p><p class="long-copy">
 				I was the lead instructor at one of the country's top software engineering bootcamps for 2 years. Collaborating with people who are excited about building cool things is what I enjoy. I am passionate about learning new technologies and always looking for opportunities to expand and hone my skills. Some of my personal and professional projects can be seen below.</p>
-				<div id="portfolio" />
+				<div id="portfolio"></div>
 			</div>
 		</section>
 		<section id="portfolio-section" class="section-portfolio">
@@ -76,31 +78,31 @@
 				<h2>Portfolio</h2>
 				<h3 class="professional-portfolio-header">Professional Experience</h3>
 				<div class="portfolio-flex">
-					<div class="col span-1-of-3 box portfolio-col">
+					<div class="portfolio-col">
 						<div class="logo-container">
 							<picture>
 								<source class="company-logo" srcset="resources/images/spredfast-logo.webp" type="image/webp">
 								<img class="company-logo" src="resources/images/spredfast-logo.png" alt="spredfast-logo">
 							</picture>
 							<div class="overlay">
-								<a class="visit-website-button" target="_blank" href="https://login.spredfast.com" aria-label="view project">View Project</a>
+								<a class="visit-website-button" target="_blank" rel="noopener noreferrer" href="https://login.spredfast.com" aria-label="view project">View Project</a>
 							</div>
 						</div>
 						<p>I was the lead engineer working on the redesign of the login page for Spredfast's marketing platform, eventually the marketing half of the Khoros product suite. In doing so, we upgraded all project dependencies, maintained a focus on accessibility, and added the convenience of 4 multi-factor authentication options.</p>
 					</div>
-					<div class="col span-1-of-3 box portfolio-col">
+					<div class="portfolio-col">
 						<div class="logo-container">
 							<picture>
 								<source class="company-logo" srcset="resources/images/khoros-logo.webp" type="image/webp">
 								<img class="company-logo" src="resources/images/khoros-logo.png" alt="khoros-logo">
 							</picture>
 							<div class="overlay">
-								<a class="visit-website-button" target="_blank" href="https://shared-ui.qa.app.khoros.com" aria-label="view project">View Project</a>
+								<a class="visit-website-button" target="_blank" rel="noopener noreferrer" href="https://shared-ui.qa.app.khoros.com" aria-label="view project">View Project</a>
 							</div>
 						</div>
 						<p>As the technical lead for the Shared UI project at Khoros, I oversaw the conception, design, and implementation of a brand new reusable React component library for use by developers across the Khoros product suite. This project maintained accessibility as top priority by enforcing WCAG compliance.</p>
 					</div>
-					<div class="col span-1-of-3 box portfolio-col">
+					<div class="portfolio-col">
 						<div class="logo-container">
 							<picture>
 								<source class="company-logo" srcset="resources/images/kapsch-logo.webp" type="image/webp">
@@ -115,7 +117,7 @@
 				</div>
 				<h3 class="personal-portfolio-header">Personal Projects</h3>
 				<div class="portfolio-flex">
-					<div class="col span-1-of-3 box portfolio-col">
+					<div class="portfolio-col">
 						<div class="screenshot-container">
 							<picture>
 								<source class="screenshot" srcset="resources/images/patrickdaly.us.jp2" type="image/jp2">
@@ -123,15 +125,15 @@
 								<img class="screenshot" src="resources/images/patrickdaly.us.png" alt="patrickdaly.us">
 							</picture>
 							<div class="overlay">
-								<a tabindex=-1 class="visit-website-button" target="_blank" href="https://github.com/dalyhabit/dalyhabit.github.io" aria-label="view project">View Project</a>
+								<a tabindex="-1" class="visit-website-button" target="_blank" rel="noopener noreferrer" href="https://github.com/dalyhabit/dalyhabit.github.io" aria-label="view project">View Project</a>
 							</div>
 						</div>
-						<a target="_blank" href="https://github.com/dalyhabit/dalyhabit.github.io" aria-label="patrickdaly.us">
+						<a target="_blank" rel="noopener noreferrer" href="https://github.com/dalyhabit/dalyhabit.github.io" aria-label="patrickdaly.us">
 							<h3>patrickdaly.us</h3>
 						</a>
 						<p>The website you're looking at right now! A simple personal webpage developed using only HTML and CSS. Super efficient and fully responsive. Perfect Google Lighthouse scores for Performance, Accessibility, Best Practices, and SEO. It's also self-hosted in a Docker container on my home server behind an nginx reverse proxy and secured with SSL.</p>
 					</div>
-					<div class="col span-1-of-3 box portfolio-col">
+					<div class="portfolio-col">
 						<div class="screenshot-container">
 							<picture>
 								<source class="screenshot" srcset="resources/images/corporate-quarters.jp2" type="image/jp2">
@@ -139,15 +141,15 @@
 								<img class="screenshot" src="resources/images/corporate-quarters.png" alt="corporate-quarters.com">
 							</picture>
 							<div class="overlay">
-								<a tabindex=-1 class="visit-website-button" target="_blank" href="https://www.corporate-quarters.com" aria-label="view project">View Project</a>
+								<a tabindex="-1" class="visit-website-button" target="_blank" rel="noopener noreferrer" href="https://www.corporate-quarters.com" aria-label="view project">View Project</a>
 							</div>
 						</div>
-						<a target="_blank" href="https://www.corporate-quarters.com" aria-label="corporate-quarters.com">
+						<a target="_blank" rel="noopener noreferrer" href="https://www.corporate-quarters.com" aria-label="corporate-quarters.com">
 							<h3>corporate-quarters.com</h3>
 						</a>
 						<p>Website for a company that connects landlords to tenants by providing medium-term rentals to corporate business travelers, travel nurses, etc. Developed using React 18, bundled with Webpack 5, hosted through AWS. Continuous integration and continuous deployment configured through AWS Amplify.</p>
 					</div>
-					<div class="col span-1-of-3 box portfolio-col">
+					<div class="portfolio-col">
 						<div class="screenshot-container">
 							<picture>
 								<source class="screenshot" srcset="resources/images/greenbelter.io.jp2" type="image/jp2">
@@ -155,10 +157,10 @@
 								<img class="screenshot" src="resources/images/greenbelter.io.png" alt="greenbelter.io">
 							</picture>
 							<div class="overlay">
-								<a tabindex=-1 class="visit-website-button" target="_blank" href="http://www.greenbelter.io" aria-label="view project">View Project</a>
+								<a tabindex="-1" class="visit-website-button" target="_blank" rel="noopener noreferrer" href="http://www.greenbelter.io" aria-label="view project">View Project</a>
 							</div>
 						</div>
-						<a target="_blank" href="http://www.greenbelter.io" aria-label="greenbelter.io">
+						<a target="_blank" rel="noopener noreferrer" href="http://www.greenbelter.io" aria-label="greenbelter.io">
 							<h3>greenbelter.io</h3>
 						</a>
 						<p>School project from my time at Hack Reactor. Access useful information about the Barton Creek Greenbelt. View real-time water flow depth data from the USGS Water Services API at multiple locations on the greenbelt. Additionally, obtain directions to each swimming hole. Developed using React, Node/Express, and deployed on AWS.</p>
@@ -173,40 +175,40 @@
 			<div class="row">
 				<h2>Resume</h2>
 			</div>
-			<div class="row">
-				<div class="col span-1-of-3 box">
-					<a tabindex=-1 class="resume-link" target="_blank" href="https://www.linkedin.com/in/patrickmdaly" aria-label="Github profile">
+			<div class="row resume-links">
+				<div class="resume-item">
+					<a tabindex="-1" class="resume-link" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/patrickmdaly" aria-label="LinkedIn profile">
 						<picture>
 							<source class="linkedin-logo" srcset="resources/images/linkedin.jp2" type="image/jp2">
 							<source class="linkedin-logo" srcset="resources/images/linkedin.webp" type="image/webp">
 							<img class="linkedin-logo" src="resources/images/linkedin.png" alt="linkedin-logo">
 						</picture>
 					</a>
-					<a target="_blank" href="https://www.linkedin.com/in/patrickmdaly" aria-label="LinkedIn profile">
+					<a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/patrickmdaly" aria-label="LinkedIn profile">
 						<h3>LinkedIn</h3>
 					</a>
 				</div>
-				<div class="col span-1-of-3 box">
-					<a tabindex=-1 class="resume-link" target="_blank" href="https://github.com/dalyhabit" aria-label="Github profile">
+				<div class="resume-item">
+					<a tabindex="-1" class="resume-link" target="_blank" rel="noopener noreferrer" href="https://github.com/dalyhabit" aria-label="Github profile">
 						<picture>
 							<source class="github-logo" srcset="resources/images/github.jp2" type="image/jp2">
 							<source class="github-logo" srcset="resources/images/github.webp" type="image/webp">
 							<img class="github-logo" src="resources/images/github.png" alt="github-logo">
 						</picture>
 					</a>
-					<a target="_blank" href="https://github.com/dalyhabit" aria-label="Github profile">
+					<a target="_blank" rel="noopener noreferrer" href="https://github.com/dalyhabit" aria-label="Github profile">
 						<h3>Github</h3>
 					</a>
 				</div>
-				<div class="col span-1-of-3 box">
-					<a tabindex=-1 class="resume-link" target="_blank" href="resume.pdf" aria-label="Resume PDF">
+				<div class="resume-item">
+					<a tabindex="-1" class="resume-link" target="_blank" rel="noopener noreferrer" href="resume.pdf" aria-label="Resume PDF">
 						<picture>
 							<source class="resume-logo" srcset="resources/images/resume.jp2" type="image/jp2">
 							<source class="resume-logo" srcset="resources/images/resume.webp" type="image/webp">
 							<img class="resume-logo" src="resources/images/resume.png" alt="pdf-icon">
 						</picture>
 					</a>
-					<a target="_blank" href="resume.pdf" aria-label="Resume PDF">
+					<a target="_blank" rel="noopener noreferrer" href="resume.pdf" aria-label="Resume PDF">
 						<h3>PDF</h3>
 					</a>
 				</div>
@@ -220,7 +222,7 @@
 			<div class="row">
 				<h2>Contact</h2>
 			</div>
-			
+
 			<div class="row">
 				<form method="post" action="https://formspree.io/f/xeqbwzry" class="contact-form">
 					<div class="small-inputs">
@@ -237,21 +239,17 @@
 
 	<footer>
 		<div class="row footer-buttons">
-			<div class="col span-1-of-2">
-				<ul class="footer-nav">
-					<li><a href="#header" aria-label="back to top">Back To Top</a></li>
-					<li><a href="#about" aria-label="footer link to about me">About Me</a></li>
-					<li><a href="#portfolio" aria-label="footer link to portfolio">Portfolio</a></li>
-					<li><a href="#resume" aria-label="footer link to resume">Resume</a></li>
-					<li><a href="#contact" aria-label="footer link to contact">Contact</a></li>
-				</ul>
-			</div>
-			<div class="col span-1-of-2">
-				<ul class="social-links">
-					<li><a target="_blank" href="https://www.linkedin.com/in/patrickmdaly" aria-label="footer link to LinkedIn profile"><svg class="linkedin-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M417.2 64H96.8C79.3 64 64 76.6 64 93.9V415c0 17.4 15.3 32.9 32.8 32.9h320.3c17.6 0 30.8-15.6 30.8-32.9V93.9C448 76.6 434.7 64 417.2 64zM183 384h-55V213h55v171zm-25.6-197h-.4c-17.6 0-29-13.1-29-29.5 0-16.7 11.7-29.5 29.7-29.5s29 12.7 29.4 29.5c0 16.4-11.4 29.5-29.7 29.5zM384 384h-55v-93.5c0-22.4-8-37.7-27.9-37.7-15.2 0-24.2 10.3-28.2 20.3-1.5 3.6-1.9 8.5-1.9 13.5V384h-55V213h55v23.8c8-11.4 20.5-27.8 49.6-27.8 36.1 0 63.4 23.8 63.4 75.1V384z" fill="currentColor"/></svg></a></li>
-					<li><a target="_blank" href="https://www.github.com/dalyhabit" aria-label="footer link to Github profile"><svg class="github-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 32C132.3 32 32 134.9 32 261.7c0 101.5 64.2 187.5 153.2 217.9 1.4.3 2.6.4 3.8.4 8.3 0 11.5-6.1 11.5-11.4 0-5.5-.2-19.9-.3-39.1-8.4 1.9-15.9 2.7-22.6 2.7-43.1 0-52.9-33.5-52.9-33.5-10.2-26.5-24.9-33.6-24.9-33.6-19.5-13.7-.1-14.1 1.4-14.1h.1c22.5 2 34.3 23.8 34.3 23.8 11.2 19.6 26.2 25.1 39.6 25.1 10.5 0 20-3.4 25.6-6 2-14.8 7.8-24.9 14.2-30.7-49.7-5.8-102-25.5-102-113.5 0-25.1 8.7-45.6 23-61.6-2.3-5.8-10-29.2 2.2-60.8 0 0 1.6-.5 5-.5 8.1 0 26.4 3.1 56.6 24.1 17.9-5.1 37-7.6 56.1-7.7 19 .1 38.2 2.6 56.1 7.7 30.2-21 48.5-24.1 56.6-24.1 3.4 0 5 .5 5 .5 12.2 31.6 4.5 55 2.2 60.8 14.3 16.1 23 36.6 23 61.6 0 88.2-52.4 107.6-102.3 113.3 8 7.1 15.2 21.1 15.2 42.5 0 30.7-.3 55.5-.3 63 0 5.4 3.1 11.5 11.4 11.5 1.2 0 2.6-.1 4-.4C415.9 449.2 480 363.1 480 261.7 480 134.9 379.7 32 256 32z" fill="currentColor"/></svg></i></a></li>
-				</ul>
-			</div>
+			<ul class="footer-nav">
+				<li><a href="#header" aria-label="back to top">Back To Top</a></li>
+				<li><a href="#about" aria-label="footer link to about me">About Me</a></li>
+				<li><a href="#portfolio" aria-label="footer link to portfolio">Portfolio</a></li>
+				<li><a href="#resume" aria-label="footer link to resume">Resume</a></li>
+				<li><a href="#contact" aria-label="footer link to contact">Contact</a></li>
+			</ul>
+			<ul class="social-links">
+				<li><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/patrickmdaly" aria-label="footer link to LinkedIn profile"><svg class="linkedin-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M417.2 64H96.8C79.3 64 64 76.6 64 93.9V415c0 17.4 15.3 32.9 32.8 32.9h320.3c17.6 0 30.8-15.6 30.8-32.9V93.9C448 76.6 434.7 64 417.2 64zM183 384h-55V213h55v171zm-25.6-197h-.4c-17.6 0-29-13.1-29-29.5 0-16.7 11.7-29.5 29.7-29.5s29 12.7 29.4 29.5c0 16.4-11.4 29.5-29.7 29.5zM384 384h-55v-93.5c0-22.4-8-37.7-27.9-37.7-15.2 0-24.2 10.3-28.2 20.3-1.5 3.6-1.9 8.5-1.9 13.5V384h-55V213h55v23.8c8-11.4 20.5-27.8 49.6-27.8 36.1 0 63.4 23.8 63.4 75.1V384z" fill="currentColor"/></svg></a></li>
+				<li><a target="_blank" rel="noopener noreferrer" href="https://www.github.com/dalyhabit" aria-label="footer link to Github profile"><svg class="github-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 32C132.3 32 32 134.9 32 261.7c0 101.5 64.2 187.5 153.2 217.9 1.4.3 2.6.4 3.8.4 8.3 0 11.5-6.1 11.5-11.4 0-5.5-.2-19.9-.3-39.1-8.4 1.9-15.9 2.7-22.6 2.7-43.1 0-52.9-33.5-52.9-33.5-10.2-26.5-24.9-33.6-24.9-33.6-19.5-13.7-.1-14.1 1.4-14.1h.1c22.5 2 34.3 23.8 34.3 23.8 11.2 19.6 26.2 25.1 39.6 25.1 10.5 0 20-3.4 25.6-6 2-14.8 7.8-24.9 14.2-30.7-49.7-5.8-102-25.5-102-113.5 0-25.1 8.7-45.6 23-61.6-2.3-5.8-10-29.2 2.2-60.8 0 0 1.6-.5 5-.5 8.1 0 26.4 3.1 56.6 24.1 17.9-5.1 37-7.6 56.1-7.7 19 .1 38.2 2.6 56.1 7.7 30.2-21 48.5-24.1 56.6-24.1 3.4 0 5 .5 5 .5 12.2 31.6 4.5 55 2.2 60.8 14.3 16.1 23 36.6 23 61.6 0 88.2-52.4 107.6-102.3 113.3 8 7.1 15.2 21.1 15.2 42.5 0 30.7-.3 55.5-.3 63 0 5.4 3.1 11.5 11.4 11.5 1.2 0 2.6-.1 4-.4C415.9 449.2 480 363.1 480 261.7 480 134.9 379.7 32 256 32z" fill="currentColor"/></svg></a></li>
+			</ul>
 		</div>
 		<div class="row">
 			<p>
