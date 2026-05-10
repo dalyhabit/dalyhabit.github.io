@@ -23,17 +23,6 @@
   --container-width: 1140px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-text: #b2cfe4;
-    --color-on-bg: #8ecae6;
-    --color-bg: #0a1929;
-    --color-surface: #132f4c;
-    --color-border: rgba(255, 255, 255, 0.1);
-    --color-input-border: #2d4a6a;
-    --color-overlay-bg: #132f4c;
-  }
-}
 
 /* ============================================================
    Reset & Base
@@ -408,11 +397,6 @@ header {
   margin-bottom: 80px;
 }
 
-@media (prefers-color-scheme: dark) {
-  .portfolio-body {
-    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.4), 0 0 0 1px var(--color-border);
-  }
-}
 
 .portfolio-flex {
   display: flex;
@@ -619,9 +603,6 @@ img.linkedin-logo:hover {
   background-color: var(--color-blue-light);
 }
 
-@media (prefers-color-scheme: dark) {
-  .section-form { background-color: var(--color-dark); }
-}
 
 .contact-form {
   width: 60%;
@@ -655,14 +636,6 @@ textarea {
   min-height: 160px;
 }
 
-@media (prefers-color-scheme: dark) {
-  input[type=text],
-  input[type=email],
-  textarea {
-    background-color: var(--color-surface);
-    color: var(--color-text);
-  }
-}
 
 input[type=submit] {
   cursor: pointer;
