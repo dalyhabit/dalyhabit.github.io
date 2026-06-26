@@ -247,6 +247,7 @@ a:active {
   .nav-toggle-label {
     display: flex;
     align-items: center;
+    padding-right: 16px;
   }
 
   .main-nav {
