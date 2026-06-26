@@ -400,6 +400,7 @@ header {
 
 .portfolio-flex {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   column-gap: 1.6%;
 }
@@ -528,7 +529,7 @@ img.screenshot {
 }
 
 @media only screen and (max-width: 1023px) {
-  .portfolio-flex { flex-direction: column; column-gap: 0; }
+  .portfolio-flex { flex-direction: column; flex-wrap: nowrap; column-gap: 0; }
   .portfolio-col { flex: none; width: 100%; margin-top: 1em; }
   img.screenshot { max-width: 80%; }
   .portfolio-body { padding: 20px; }
