@@ -450,6 +450,10 @@ img.company-logo {
   margin: 0;
 }
 
+img[alt="udemy-logo"] {
+  max-width: 185px;
+}
+
 .logo-container {
   position: relative;
   display: flex;
